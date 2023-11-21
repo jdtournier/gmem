@@ -11,5 +11,10 @@ setup(name='gmem',
     install_requires=[
       'plotext',
       ],
-    zip_safe=False)
+      entry_points={
+        'console_scripts': ['gmem=gmem.command_line:main'],
+        },
+      include_package_data=True,
+
+      zip_safe=False)
 
